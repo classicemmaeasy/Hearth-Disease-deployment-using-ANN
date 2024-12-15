@@ -6,7 +6,7 @@ from tensorflow.keras.models import load_model
 # Load the pre-trained Keras model
 @st.cache_resource
 def load_keras_model():
-    return load_model("C:/Users/HP/Desktop/abisola/model.keras")
+    return load_model("model.keras")
 
 model = load_keras_model()
 
