@@ -58,7 +58,7 @@ input_features = np.array([[
 ]])
 
 # Predict button
-if st.button("Predict"):
+if st.button("Heart Disease Prediction: "):
     prediction = model.predict(input_features)
     predicted_class = int(prediction[0][0] > 0.5)  # Assuming binary classification (0 or 1)
     
