@@ -12,6 +12,16 @@ model = load_keras_model()
 
 # Streamlit app title
 st.markdown('<p style="font-size:22px; font-weight:bold;">Heart Disease Prediction App</p>', unsafe_allow_html=True)
+# Custom CSS to hide Streamlit branding and footer
+hide_streamlit_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        img {visibility: hidden;}
+        footer:after {content: ''; display: none;}
+        </style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 # Create input fields for user input with descriptions
 # st.write("Please fill in the details below to predict the likelihood of heart disease.")
